@@ -1,0 +1,499 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*My Reset*/
+*,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+/*General*/
+.container {
+  max-width: 1250px;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+.center {
+  text-align: center;
+}
+.width-full {
+  width: 100%;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.padding {
+  padding: 4rem 0;
+}
+.sec-head {
+  padding-bottom: 4rem;
+}
+/*Flex*/
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.justify {
+  justify-content: flex-start;
+}
+.alignment {
+  align-items: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.alignment-center {
+  align-items: center;
+}
+.flex-55 {
+  flex: 0 1 55%;
+}
+.flex-40 {
+  flex: 0 1 40%;
+}
+.flex-49 {
+  flex: 0 1 49%;
+}
+.flex-23 {
+  flex: 0 1 23%;
+}
+.flex-10{
+flex: 0 1 10%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-66{
+    flex: 0 1 66%;
+}
+.flex-33{
+    flex: 0 1 33%;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+/*Header*/
+.header {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.flex-75 {
+  flex: 0 1 75%;
+}
+.social i {
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  border-radius: 50%;
+  line-height: 3rem;
+  margin: 2rem 0;
+  margin-right: 1rem;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: coral;
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+.navigation li {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 3rem;
+}
+.navigation a{
+    color: black;
+}
+.nav-header {
+  background-color: white;
+}
+.navigation .active {
+  color: coral;
+}
+.navigation li:hover {
+  color: coral;
+}
+/*Hero*/
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../media/banner.jpg) no-repeat;
+  color: white;
+  padding: 8rem 0;
+  position: relative;
+}
+.hero-container {
+  margin-top: 17rem;
+}
+.hero-header {
+  width: 3rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hero p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.hero hr {
+  width: 25rem;
+}
+.btn {
+  background-color: #ea513e;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1rem;
+}
+/*Circle*/
+.circle {
+  padding-top: 2rem;
+}
+.circle i {
+  font-size: 2.5rem;
+}
+/*Service*/
+.service {
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+strong {
+  color: black;
+  text-transform: uppercase;
+}
+.service hr {
+  width: 15rem;
+}
+.service-icon {
+  height: 20rem;
+}
+.service-icon i {
+  margin-top: 50%;
+  font-size: 3rem;
+  color: white;
+}
+.service .file {
+  background-color: #5cbd9d;
+}
+.service .laptop {
+  background-color: #e67f31;
+}
+.service .university {
+  background-color: #3998db;
+}
+.service .flask {
+  background-color: #68cd73;
+}
+/*Portfolio*/
+.portfolio hr {
+  width: 15rem;
+}
+.gallery img {
+  margin-bottom: 1.5rem;
+}
+/*team*/
+.team hr {
+  width: 11rem;
+}
+.team img {
+  border-radius: 50%;
+}
+.article {
+  padding: 3rem 0;
+  font-style: italic;
+}
+.team h4 {
+  font-size: 1.2rem;
+  color: rgb(88, 85, 85);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.article strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: gray;
+  text-transform: capitalize;
+}
+.team p {
+  color: black;
+  font-size: 0.98rem;
+  font-weight: 500;
+  text-transform: none;
+}
+.para {
+  padding-bottom: 2rem;
+}
+.team span {
+  color: #e07320;
+}
+.graph {
+  background-color: #ea513e;
+  margin-bottom: 1rem;
+}
+.photoshop {
+  width: 15rem;
+  padding: 0.5rem 0;
+}
+.html-css {
+  width: 13rem;
+  padding: 0.5rem 0;
+}
+.devlopment {
+  width: 11rem;
+  padding: 0.5rem 0;
+}
+.graph-container {
+  padding: 1.25rem 0;
+  background-color: #e7e7e7;
+}
+.empty-1 {
+  width: 30px;
+}
+.empty-2 {
+  width: 60px;
+}
+.empty-3 {
+  width: 90px;
+}
+.graph h5 {
+  padding: 0 0.5rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+/*Contact*/
+.contact {
+  padding-top: 3rem;
+}
+/*Form*/
+
+.form-control {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+}
+.form-btn {
+  width: 100%;
+  border-radius: 0%;
+  text-align: center;
+  margin-top: 0%;
+}
+/*Footer*/
+small {
+  text-transform: capitalize;
+}
+.footer-btn {
+  text-align: right;
+}
+.foot {
+  margin-top: 4rem;
+}
+/*Blog Page*/
+.aside-container{
+    position: fixed;
+    width: 27%;
+    background-color: #ea513e;
+    height: 100%;
+    padding: 2rem;
+   
+}
+.aside h1{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.aside-container a{
+    font-size: 0.9rem;
+    border: 1px solid white;
+    font-weight: 600;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 4px;
+}
+.gallery-social i{
+    background-color: #ea513e;
+   text-align: center;
+   color: white;
+   border: 2px solid white;
+}
+.aside-container h2{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.aside-container p{
+font-size: 0.9rem;
+font-weight: 600;
+}
+.aside-content{
+  margin-top: 70%;
+}
+/*Gallery*/
+.gallery h3{
+ font-weight: 700;
+ text-align: center;
+padding-bottom: 2rem;
+}
+.img{
+    border: 3px solid black;
+    border-radius: 4px;
+}
+.img-1{
+   height: 300px;
+}
+.img-2{
+    height: 600px;
+}
